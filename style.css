@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 35%;
+  background: gray;
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.right-panel {
+  width: 75%;
+  height: 150%;
+  overflow-y: scroll;
+  padding: 30px;
+  background-color: maroon;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bio-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  background: gray;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  margin: -15px -15px 10px -15px;
+  font-size: 20px;
+}
+
+p, li {
+  color: 333#;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
